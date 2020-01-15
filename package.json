@@ -1,8 +1,8 @@
 {
-  "name": "outdent",
+  "name": "@mvasilkov/outdent",
   "version": "1.0.0",
   "description": "⇧ Shift+Tab ↹",
-  "main": "app.js",
+  "main": "javascript/outdent.js",
   "repository": "git@github.com:mvasilkov/outdent.git",
   "author": "Mark Vasilkov (https://github.com/mvasilkov)",
   "license": "MIT"
