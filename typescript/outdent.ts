@@ -1,5 +1,11 @@
 'use strict'
 
+interface IOptions {
+    strict?: boolean
+    endWithNewline?: boolean
+    tabSize?: number
+}
+
 // Newlines
 const CR_LF = '\r\n'
 const LF = '\n'
@@ -16,8 +22,8 @@ function indentLevel(a: string): number {
     return Infinity // Empty lines don't contribute to the indentation level
 }
 
-function outdentLines() {
+export function outdentLines(a: string[], options: IOptions) {
 }
 
-function outdent() {
+export function outdent(a: string, options: IOptions) {
 }

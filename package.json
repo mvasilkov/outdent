@@ -5,5 +5,11 @@
   "main": "javascript/outdent.js",
   "repository": "git@github.com:mvasilkov/outdent.git",
   "author": "Mark Vasilkov (https://github.com/mvasilkov)",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "smol test"
+  },
+  "devDependencies": {
+    "smoltest": "^1.0.2"
+  }
 }
