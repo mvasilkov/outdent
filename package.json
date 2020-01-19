@@ -1,7 +1,16 @@
 {
   "name": "@mvasilkov/outdent",
   "version": "1.0.0",
-  "description": "⇧ Shift+Tab ↹",
+  "description": "Remove indentation from strings.",
+  "keywords": [
+    "heredoc",
+    "indent",
+    "indentation",
+    "outdent",
+    "template literal",
+    "template string",
+    "unindent"
+  ],
   "main": "javascript/outdent.js",
   "repository": "git@github.com:mvasilkov/outdent.git",
   "author": "Mark Vasilkov (https://github.com/mvasilkov)",
