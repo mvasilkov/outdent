@@ -21,7 +21,8 @@ function clean(a, endWithNewline) {
     if (endWithNewline) {
         if (!result.length)
             return ['', ''];
-        result.push('');
+        if (result[result.length - 1] != '')
+            result.push('');
     }
     return result;
 }
