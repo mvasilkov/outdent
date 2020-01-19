@@ -22,22 +22,28 @@ function indentLevel(a: string): number {
     return Infinity // Empty lines don't contribute to the indentation level
 }
 
-function clean(a: string[]): string[] {
+function clean(a: string[], endWithNewline?: boolean): string[] {
     const start = a[0] ? 0 : 1
     const end = a[a.length - 1] ? a.length : -1
-    return a.slice(start, end)
+    const result = a.slice(start, end)
+    if (endWithNewline) {
+        if (!result.length) return ['', '']
+        result.push('')
+    }
+    return result
 }
 
 export function outdentLines(a: string[], options?: IOptions): string[] {
     if (options?.strict) {
         const level = Math.min(...a.map(indentLevel))
-        if (isFinite(level) && level != 0)
-            return a.map(b => b.slice(level))
-        return a
+        if (!level) return a
+        if (!isFinite(level)) return Array(a.length).fill('')
+        return a.map(b => b.slice(level))
     }
-    if (a.length < 2) return clean(a)
-    return clean([a[0], ...outdentLines(a.slice(1),
-        Object.assign({}, options, { strict: true }))])
+    if (a.length < 2) return clean(a, options?.endWithNewline)
+    const result = [a[0], ...outdentLines(a.slice(1),
+        Object.assign({}, options, { strict: true }))]
+    return clean(result, options?.endWithNewline)
 }
 
 export function outdent(a: string, options?: IOptions): string {
