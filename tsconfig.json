@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2015",
     "module": "commonjs",
-    // "declaration": true,
+    "declaration": true,
     "outDir": "./javascript",
     "rootDir": "./typescript",
     "strict": true,

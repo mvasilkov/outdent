@@ -12,6 +12,10 @@
     "unindent"
   ],
   "main": "javascript/outdent.js",
+  "types": "javascript/outdent.d.ts",
+  "files": [
+    "javascript"
+  ],
   "repository": "git@github.com:mvasilkov/outdent.git",
   "author": "Mark Vasilkov (https://github.com/mvasilkov)",
   "license": "MIT",
