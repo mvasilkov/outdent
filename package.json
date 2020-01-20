@@ -1,7 +1,7 @@
 {
   "name": "@mvasilkov/outdent",
   "version": "1.0.2",
-  "description": "Remove indentation from strings.",
+  "description": "Remove extra indentation from multiline strings.",
   "keywords": [
     "heredoc",
     "indent",

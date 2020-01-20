@@ -1,7 +1,7 @@
 outdent
 ===
 
-Remove indentation from strings.
+Remove extra indentation from multiline strings.
 
 [![npm][npm-image]][npm-url]
 
