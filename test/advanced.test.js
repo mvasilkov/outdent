@@ -19,6 +19,14 @@ exports.testNil = function testNil() {
 
 
     `), '\n')
+
+    assert.strictEqual(outdent(`\t
+    Hello
+    `), 'Hello')
+
+    assert.strictEqual(outdent(`
+    Hello
+    \t`), 'Hello')
 }
 
 exports.testEndWithNewline = function testEndWithNewline() {
@@ -67,10 +75,4 @@ exports.testOverflow = function testOverflow() {
     // Test for 'Maximum call stack size exceeded'
     const a = Array(300000).fill('')
     outdentLines(a, { strict: true })
-}
-
-exports.testThings = function testThings() {
-    assert.strictEqual(outdent(`\t
-    Hello
-    `), 'Hello')
 }
