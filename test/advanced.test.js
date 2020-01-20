@@ -1,6 +1,6 @@
 const assert = require('assert').strict
 
-const { outdent } = require('..')
+const { outdent, outdentLines } = require('..')
 
 exports.testNil = function testNil() {
     assert.strictEqual(outdent(`
@@ -61,4 +61,16 @@ exports.testStrict = function testStrict() {
       Line #2
         Line #3
     `, { strict: true }), '\nLine #1\n  Line #2\n    Line #3\n')
+}
+
+exports.testOverflow = function testOverflow() {
+    // Test for 'Maximum call stack size exceeded'
+    const a = Array(300000).fill('')
+    outdentLines(a, { strict: true })
+}
+
+exports.testThings = function testThings() {
+    assert.strictEqual(outdent(`\t
+    Hello
+    `), 'Hello')
 }

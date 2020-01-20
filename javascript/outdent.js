@@ -14,8 +14,17 @@ function indentLevel(a) {
         return b[0].length;
     return Infinity; // Empty lines don't contribute to the indentation level
 }
+function sharedIndent(a) {
+    let result = Infinity;
+    for (let n = 0; n < a.length; ++n) {
+        const level = indentLevel(a[n]);
+        if (level < result)
+            result = level;
+    }
+    return result;
+}
 function clean(a, endWithNewline) {
-    const start = a[0] ? 0 : 1;
+    const start = a[0] && isFinite(indentLevel(a[0])) ? 0 : 1;
     const end = a[a.length - 1] ? a.length : -1;
     const result = a.slice(start, end);
     if (endWithNewline) {
@@ -29,7 +38,7 @@ function clean(a, endWithNewline) {
 function outdentLines(a, options) {
     var _a, _b, _c;
     if ((_a = options) === null || _a === void 0 ? void 0 : _a.strict) {
-        const level = Math.min(...a.map(indentLevel));
+        const level = sharedIndent(a);
         if (!level)
             return a;
         if (!isFinite(level))
