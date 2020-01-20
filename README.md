@@ -58,7 +58,7 @@ empty. Useful for writing multiline strings in JS. **This is the default.**
 **{ endWithNewline: true }**
 
 When enabled, insert a line break at the end of the result, if there is none.
-Does nothing when **{ strict: true }** is in effect.
+Does nothing when **strict: true** is in effect.
 
 License
 ---
