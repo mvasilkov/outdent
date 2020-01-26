@@ -23,6 +23,6 @@
     "test": "smol test"
   },
   "devDependencies": {
-    "smoltest": "^1.0.2"
+    "smoltest": "*"
   }
 }

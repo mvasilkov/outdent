@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-smoltest@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/smoltest/-/smoltest-1.0.2.tgz#7dea15da4dc804e8201e5dec97aeff89189306cf"
-  integrity sha512-8ixT89ovdZtj+d3l3BzKEv3zZP7Tx+440ekBA//7zFP5vKya1EZtEsmVPB4ONyd3I52XHGbJl0hP/STpyHqpZw==
+smoltest@*:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/smoltest/-/smoltest-1.0.4.tgz#b32a1ce973642289fc596bb7925d7c8f48438464"
+  integrity sha512-4coeFN4T43VWmu9oWBEO4VvxPAocLBpOgeRia0p9IBme36Ragnu0x3v06hS1YDAOjEqsCTu6TS+bN9YSAaynRA==

@@ -1,5 +1,5 @@
 const assert = require('assert').strict
-const { describe, it } = require('smoltest/adapt/mocha')(exports)
+const { describe, it } = require('smoltest')(exports)
 
 const { outdent } = require('..')
 
