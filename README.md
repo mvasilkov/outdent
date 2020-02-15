@@ -3,7 +3,8 @@ outdent
 
 Remove extra indentation from multiline strings.
 
-[![npm][npm-image]][npm-url]
+[![npm][npm-badge]][npm-url]
+[![no dependencies][dependencies-badge]][dependencies-url]
 
 ---
 
@@ -15,7 +16,7 @@ Installation
 ---
 
 ```sh
-yarn add @mvasilkov/outdent
+npm add @mvasilkov/outdent
 ```
 
 Usage
@@ -65,5 +66,7 @@ License
 
 MIT
 
-[npm-image]: https://img.shields.io/npm/v/@mvasilkov/outdent.svg?style=flat-square
+[npm-badge]: https://img.shields.io/npm/v/@mvasilkov/outdent.svg?style=flat
 [npm-url]: https://www.npmjs.com/package/@mvasilkov/outdent
+[dependencies-badge]: https://img.shields.io/david/mvasilkov/outdent?style=flat
+[dependencies-url]: https://www.npmjs.com/package/@mvasilkov/outdent?activeTab=dependencies

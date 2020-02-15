@@ -1,6 +1,6 @@
 {
   "name": "@mvasilkov/outdent",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Remove extra indentation from multiline strings.",
   "keywords": [
     "heredoc",
@@ -9,7 +9,8 @@
     "outdent",
     "template literal",
     "template string",
-    "unindent"
+    "unindent",
+    "no-dependencies"
   ],
   "main": "javascript/outdent.js",
   "types": "javascript/outdent.d.ts",
