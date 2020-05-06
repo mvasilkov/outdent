@@ -5,6 +5,7 @@ Remove extra indentation from multiline strings.
 
 [![npm][npm-badge]][npm-url]
 [![no dependencies][dependencies-badge]][dependencies-url]
+[![][size-badge]][npm-url]
 
 ---
 
@@ -70,3 +71,4 @@ MIT
 [npm-url]: https://www.npmjs.com/package/@mvasilkov/outdent
 [dependencies-badge]: https://img.shields.io/david/mvasilkov/outdent?style=flat
 [dependencies-url]: https://www.npmjs.com/package/@mvasilkov/outdent?activeTab=dependencies
+[size-badge]: https://img.shields.io/github/size/mvasilkov/outdent/javascript/outdent.js.svg?style=flat

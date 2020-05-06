@@ -39,8 +39,7 @@ function clean(a, endWithNewline) {
     return result;
 }
 function outdentLines(a, options) {
-    var _a, _b, _c;
-    if ((_a = options) === null || _a === void 0 ? void 0 : _a.strict) {
+    if (options === null || options === void 0 ? void 0 : options.strict) {
         const level = sharedIndent(a);
         if (!level)
             return a;
@@ -49,9 +48,9 @@ function outdentLines(a, options) {
         return a.map(b => b.slice(level));
     }
     if (a.length < 2)
-        return clean(a, (_b = options) === null || _b === void 0 ? void 0 : _b.endWithNewline);
+        return clean(a, options === null || options === void 0 ? void 0 : options.endWithNewline);
     const result = [a[0], ...outdentLines(a.slice(1), Object.assign({}, options, { strict: true }))];
-    return clean(result, (_c = options) === null || _c === void 0 ? void 0 : _c.endWithNewline);
+    return clean(result, options === null || options === void 0 ? void 0 : options.endWithNewline);
 }
 exports.outdentLines = outdentLines;
 function outdent(a, options) {
