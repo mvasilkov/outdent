@@ -69,6 +69,6 @@ MIT
 
 [npm-badge]: https://img.shields.io/npm/v/@mvasilkov/outdent.svg?style=flat
 [npm-url]: https://www.npmjs.com/package/@mvasilkov/outdent
-[dependencies-badge]: https://img.shields.io/david/mvasilkov/outdent?style=flat
+[dependencies-badge]: https://img.shields.io/librariesio/release/npm/@mvasilkov/outdent?style=flat
 [dependencies-url]: https://www.npmjs.com/package/@mvasilkov/outdent?activeTab=dependencies
 [size-badge]: https://img.shields.io/github/size/mvasilkov/outdent/javascript/outdent.js.svg?style=flat
